@@ -1,0 +1,17 @@
+<app-game-controller
+  (startInterval) = beginInterval()
+  (endInterval) = stopInterval()
+
+></app-game-controller>
+
+<div class="flex mx-auto w-[300px] gap-32">
+  <div>
+    <h1>even numbers</h1>
+    <app-even *ngFor="let even of evenNumbers" [evenNumber]="even"></app-even>
+  </div>
+  <div>
+    <h1>odd numbers</h1>
+    <app-odd *ngFor="let odd of oddNumbers" [oddNumbers]="odd"></app-odd>
+  </div>
+</div>
+
